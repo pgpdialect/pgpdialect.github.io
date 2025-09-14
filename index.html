@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>stc is the greatest</title>
+  <style>
+    body {
+      background-image: url("https://wallpapercave.com/wp/wp12029802.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    header {
+      text-align: center;
+      padding: 50px 20px 20px 20px;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 50px auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .post-card {
+      background-color: rgba(0,0,0,0.6);
+      padding: 20px;
+      border-radius: 15px;
+      transition: transform 0.2s;
+    }
+
+    .post-card:hover {
+      transform: scale(1.03);
+    }
+
+    .post-card h2 {
+      margin-top: 0;
+    }
+
+    .post-card a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    .post-card a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Blog</h1>
+    <p>Topics include: OSINT, Cybersecurity, and other stupid shit</p>
+  </header>
+
+  <main>
+    <div class="post-card">
+      <h2><a href="post1.html">OSINT</a></h2>
+      <p>An advanced rather long text i wrote that covers the basics of OSINT</p>
+    </div>
+
+    <div class="post-card">
+      <h2><a href="post2.html">Tools</a></h2>
+      <p>A list of OSINT tools, mainly for beginners, and mainly free</p>
+    </div>
+
+    <!-- Add more post cards here as you create new posts -->
+  </main>
+
+  <footer>
+    <p>© 2025 Digital Gangsters LLC</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tools</title>
+  <style>
+    body {
+      background-image: url("https://wallpaperbat.com/img/522778-wallpaper-tools-collection-wood-workbench-3840x2160-uhd-4k-picture-image.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 15px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    #post-text {
+      white-space: pre-line;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Tools</h1>
+
+    <div id="post-text">
+Litterally just a bunch of tools
+
+username search - enter username here - gives you every site that username is used on - people are creatures of habbit, they use the same usernames often, of course this does not apply when someone has a common username or "og user" you then try to use their other social medias to further gain information on them such as their Name, face, family, and friends, etc. all username searchers sometimes give false positives and false negatives, be sure to also google the target username
+
+website for exactly this - https://whatsmyname.app/
+tool for a command line interface, basically the same as the above but you run it in the terminal - https://github.com/sherlock-project/sherlock
+https://instantusername.com/ (usually use as a backup if one of the others are not working)
+
+data brokers, you use them to track down a lot of information on someone once you have the basics like a name or an email/phone number, it only works on people who are 18+ and usually they have to be a resident of the united states, i will only list free data broker sites but it is usually much better if they are paid, however i am keeping this list free
+
+https://www.truepeoplesearch.com/ (personal favorite)
+https://www.fastpeoplesearch.com/address
+https://thatsthem.com/
+https://lookups.melissa.com/home/
+
+data breaches, like data brokers but more lucrative, and more illegal
+
+https://www.proxynova.com/tools/comb
+https://haveibeenpwned.com/ (only checks if the entered creds are breached, does not give info)
+https://intelx.io/ (paid, but sometimes results are free)
+https://breachdirectory.org/
+https://www.hudsonrock.com/threat-intelligence-cybercrime-tools
+
+if you stumble across an IP you want to look into, note tyhat most IPs are dynamic, they change ownership regularly, assume an IP you get is only valid for a day or two
+
+https://whatismyipaddress.com/ (note that when you go here at first it will display your IP, for the whole world to see, don't stream it)
+https://www.ipvoid.com/ - lots of ip tools
+https://iknowwhatyoudownload.com/ (also doxes you at first) this website checks the torrent downloads for an IP (movies, games, porn)
+https://grabify.link/ - to phish an IP
+
+metadata - nowadays, most websites and social medias and phones scrub metadata of a file when it is sent, but you can always check, metadata is information inside a file
+
+https://metadata.app/
+https://exiftool.org/ (app)
+https://www.metadata2go.com/
+
+reverse image search
+
+use google lens, bing reverse image search, and yandex reverse image search
+then use https://tineye.com/
+
+other
+
+https://www.nsopw.gov/ - a us govt website to search the names of sex offenders in the U.S
+https://yandex.com/ - google but for other non western countries mainly russia, good for finding stuff that google just doesnt index
+https://osintframework.com/ - everything
+https://ohshint.gitbook.io/oh-shint-its-a-blog/ - blog about litteraly everything, want that very specific tool or wanna learn that very specific method? search here
+https://search.ddosecrets.com/data/leaks/ - check if someones discord chat logs have been scraped, unlikely but eh, you never know
+https://www.facebook.com/ - facebook is unintentionally a OSINT tool, because people here voluntarily tell everyone everything about themselves
+
+more complex tools that you need to setup in terminal and might be hard to setup/require a fair bit of OSINT/computer skills
+
+https://github.com/Datalux/Osintgram - Osintgram is a OSINT tool on Instagram. It offers an interactive shell to perform analysis on Instagram account of any users by its nickname
+https://www.familytreenow.com/ - get jiggy with it and dox a niggas family lineage, takes a lot of effort and will probably lead to nothing
+
+fun
+
+https://www.cia.gov/the-world-factbook/ - Some fucker at the CIA gets payed to post a random fact everyday, theres also a way to look at different countries, the intention is for you to learn about fun facts and culture from every country, but sometimes it is fun to learn a bit, maybe one day it will contribute to you being a GEOINT genius cuz u saw an image and remembered, oh yes, that flower is native to algeria, i know because of the cia silly book
+
+anyways, im tired of writing this so that'll be all
+
+OSINT Tools
+by 108308
+feel free to share with your buddies
+DG4E shouts dem boys
+couldn't be bothered to embed the ones that didn't auto embed so sorry bout that
+    </div>
+
+    <p><a href="index.html">← Back to blog</a></p>
+  </main>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const container = document.getElementById('post-text');
+
+      container.innerHTML = container.innerHTML.replace(
+        /\b([\w.-]+\.(?:com|net|org|io|edu|gov))\b/g,
+        '<a href="https://$1" target="_blank">$1</a>'
+      );
+    });
+  </script>
+</body>
+</html>

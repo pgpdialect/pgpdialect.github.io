@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Advanced intro to OSINT</title>
+  <style>
+    body {
+      background-image: url("https://rm3a.fr/wp-content/uploads/2022/12/image-4.png");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-shadow: 1px 1px 3px black;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: rgba(0,0,0,0.6);
+      border-radius: 15px;
+    }
+
+    h1 {
+      margin-top: 0;
+    }
+
+    a {
+      color: #ffd700;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>OSINT</h1>
+    <p>An advanced rather long text i wrote that covers the basics of OSINT</p>
+    <p>OSINT Manifesto
+By 108308_
+
+<p>Shout outs<p>
+
+<p>shouts: Jesus Christ, Bryce "YTCracker" Case Jr, Ryan "0day" Montgomery, Matthew "Dimez" McJilton, Lavos, 0xslayy, Stanzi, Stang, Hairetsu, all digital gangsters, and many more i love you all
+of course rest in peace all the decompiled digital gangsters eternal: https://digitalgangster.com/<p>
+
+<p>DG4L DG4E<p>
+
+<p>Hopefully by the end of this text you are just as confused as the rest of us, sorry if there are any typos<p>
+
+<p>Contents:
+1. Definition of OSINT
+1.1 Introduction
+1.2 A brief history
+1.3 Google dorks
+2. Human focused OSINT
+3. OPSEC
+4. Case study
+5. Ethical and legal considerations
+6. The End
+Some have 20 chapters, mine does not<p>
+
+<p>Definition of OSINT<p>
+
+<p>OSINT stands for open source intelligence, very simply, it is in the name, intelligence gathered from open sources. But Wikipedia defines it as: Open source intelligence (OSINT) is the collection and analysis of data gathered from open sources (overt sources and publicly available information) to produce actionable intelligence. OSINT is primarily used in national security, law enforcement, and business intelligence functions and is of value to analysts who use non-sensitive intelligence in answering classified, unclassified, or proprietary intelligence requirements across the previous intelligence disciplines.<p>
+
+
+<p>Introduction<p>
+
+<p>OSINT is the practice of collecting and analyzing information from publicly available sources, “open” means accessible by anyone, whether that’s a Google search, a government database, or a TikTok video, what makes OSINT different from just “looking things up” is the intent: you’re not browsing casually, you’re systematically gathering data to answer a specific question, confirm a fact, or build a picture of a target. The scope of OSINT is huge. It can pull from news articles, academic papers, leaked documents, satellite imagery, social media posts, or even metadata hidden inside files. What ties it all together is that it’s legally obtainable without hacking or special access. OSINT is used by law enforcement to track criminals, by cybersecurity teams to monitor threats, by journalists to verify stories, and even by everyday researchers who want to connect dots. It’s both a mindset and a toolkit knowing how to ask the right questions, how to pivot from one clue to another, and how to verify what you find so you’re not fooled by disinformation or false positives. At its best, OSINT turns the overwhelming noise of the internet into focused insight. The challenge is not just finding information, but filtering it, validating it, and putting it into context. It’s an investigative discipline that combines technical skill with critical thinking and that balance is why it’s become such a core element of modern intelligence work.<p>
+
+
+<p>A brief history<p>
+
+<p>The history of OSINT is parallel to the history of intelligence itself. Long before the internet, governments and militaries collected information from open sources such as newspapers, radio broadcasts, books, and public records. During World War II, the United States ran the Foreign Broadcast Monitoring Service, which translated and analyzed enemy radio and press. The British had similar units reading foreign newspapers and intercepting propaganda. This was OSINT before the acronym existed, the sweet beautiful art of exploiting information that was out in the open. The term OSINT started gaining traction during the Cold War, when agencies realized that not all intelligence had to come from spies or classified intercepts. Roughly 80–90% of what decision makers needed could be found in libraries, newswires, or scientific journals. The CIA, for example, kept vast archives of translated foreign publications. OSINT was less glamorous than “secret” intelligence like HUMINT (human intelligence) or SIGINT (signal intelligence). The real transformation came with the rise of the internet in the 1990s and 2000s. Suddenly, ordinary people could access satellite imagery, government filings, leaked documents, and global news in real time. Search engines like Google gave everyone a way to query massive datasets instantly. At the same time, adversaries were using the same openness — terrorists and criminal groups were publishing material online, leaving trails investigators could follow. Around this time "doxing" became a big thing and still is to this day, doxing is technically OSINT. In the 2010s, the explosion of social media turned OSINT into a seriously important tool. Platforms like Twitter, Facebook, and YouTube became both a source of raw intelligence. Citizen investigators, not just state agencies, began to play a huge role. Groups like Bellingcat showed how volunteers could verify war crimes, geolocate photos, and unmask military operations using only open sources. And groups like Tracelabs (I love TL) showed that you could use it to find missing people. Today, OSINT has matured into a formal discipline alongside HUMINT, SIGINT, and other intelligence methods. Militaries, law enforcement, journalists, corporations, and activists all rely on it. The line between professional and amateur has blurred, since the tools are often free and the data is open to anyone with the patience to dig. What’s changed over time is not the principle (public information as intelligence) but the scale, speed, and accessibility brought by the internet<p>
+
+
+<p>Google dorks<p>
+
+<p>Super 1337 hacker Ryan "0day" Montgomery has said in interviews that hacking is a mindset, I agree, I also agree the same goes for open source intelligence and investigation. You need to think in a very specific way, you need to know what to look for, what is relevant, and what is not. It is also worth noting that a lot of people think tools are everything, they're not. Tools do not last forever, especially web based tools, if you are doing OSINT long enough you will probably alternate tools because other ones broke, got banned, or just got taken down, something along those lines usually.
+But on the topic of tools i think it is time to talk about the most important tool: A search engine, usually multiple, because every search engine is different, that is because they crawl the world wide web, using bots Yandex tends to be more focused on the European and Asian side of the world wide web, while google is more western.
+Googlebot (the crawler): Google uses automated bots (called crawlers or spiders) to explore the internet. They start with a list of known websites (seeds), then follow the links on those pages to discover new ones.
+Sitemaps: Website owners can submit sitemaps (XML files listing pages) to help crawlers. Googlebot also uses RSS feeds (RSS is a web feed that allows users and applications to access updates to websites in a standardized, computer-readable format), URL submissions, and backlinks from other sites as entry points.
+Rules: Crawlers respect robots.txt files, which tell bots which areas of a site to avoid, or sometimes contain a dick pic, or something to fuck with AI, for this reason and also for the reason that not everyone likes to follow rules not all crawlers follow these rules. (your bot also has to follow these rules if you are using a bot for OSINT)
+Google and other search engines run thousands of crawlers in parallel, distributed globally, so the process is always ongoing.
+indexing:Once a page is found, it has to be processed into a form Google can use.
+Parsing Content: Google extracts text, metadata, links, and structured data (like schema markup).
+Rendering: Modern sites use JavaScript heavily. Google renders pages using a headless version of Chrome to see what a human would see, not just raw HTML.
+Tokenization: Text is broken into words, stems (e.g., running - run), synonyms, and entities (e.g., Apple the company vs. apple the fruit).
+Metadata Storage: Each page is turned into a set of signals (keywords, entities, freshness, authoritativeness, etc.) and stored in Google’s index, a giant fucking database.<p>
+
+<p>and there is a lot more but it is kind of boring, even for me, and i live for this shit, and if you're reading this you probably do too, but i am selfish so i did not take that into consideration. Anyways, how do you use it, or how does an OSINT wizard use it, well obviously it is one of the primary tools, it even contains other tools, like websites that do username searches or geospatial intelligence. Advanced search: most search engines have advanced search options, where investigators can filter results by date, location, file type, or domain, obviously looking for a specific relevant thing to whatever or whoever they are investigating and fine tuning these filters. But sometimes you need more, so you would use google dorking/search operators. These can get very in depth and complex, and there is a lot, here is a list of all to my knowledge<p>
+
+<p>All search operators in google (a lot work in other search engines and OSINT tools), in no particular order<p>
+
+<p>Important Note: Google is sort of cracking down on search operators, allthough Google made these operators, they are starting to realize that threat actors may or have taken advantage of them, so unfortunately, google will intentionally block, or sometimes, entirely delete search operators so some only work on specific versions of google or in some regions<p>
+
+<p>"" the quotation marks, used to search for a specific word, it will only show you exactly what is in the quotation. example:
+"ytcracker" this will only show you results that contain that word<p>
+
+<p>- this operator does the opposite, it excludes a word, an example would be: best pizza -New York (I know, criminal, lock me up for saying this)<p>
+
+<p>+ this operator allows you to include a word or phrase in your search, it is very unuseful because as with a lot of search operators, google just implies it when you do a regular search, however it may come in handy for exact word searches like site:linkedin.com +“Bryce Case” +“cybersecurity researcher”<p>
+
+<p>NOT (all caps) this operator is basically the same as the minus operator it narrows your search by excluding a search term, Google used to support the NOT operator, but it doesn’t work in the same way as in some other search engines or databases. Google tends to interpret it as an OR operator, so it's not a reliable way to exclude terms. It is better to just use the minus operator
+You can’t use NOT directly in a Google search query (like you would in Boolean searches) but you may be able to use it in more specialized OSINT tools<p>
+
+<p>OR this one expands your search, for example Laptop OR Desktop<p>
+
+<p>AND this operator is usually an implied search operator, for example if you search "pyhton machine learning" google assumes this is the same as pyhton AND machine AND learning<p>
+
+<p>* this asterisk is like a wildcard, and is not used very often but this is a full list so it must be included, it is better explained as an example
+how to * a car
+google will probably show you something like
+how to drive a car
+how to fix a car
+how to steal a car
+so on and so forth<p>
+
+<p>~ the tilde operator is widely irrelevant, it used to be used to search synonyms but again, google just implies that now, however, it still has some uses. While Google doesn't use it, tools like Shodan or Censys may still allow for wildcard searches (same goes for * and most other irrelevant outdated operators) on some websites, particularly academic ones use ~ for personal pages. The tilde is still used in hashtags on platforms like Twitter and Instagram. You can search for related content across the web using Google, e.g. ~"cybersecurity news" site:twitter.com.<p>
+
+<p>() the parentheses operator is for once useful, They are used to group search terms and control the order of operations. It is similar to how parentheses are used in mathematics to define which operations should be performed first, They allow you to combine multiple search operators or keywords, refining your search logic, here is an example: ("data breach" OR "security incident") AND "2023" This search will return results that contain either "data breach" or "security incident", and must also include "2023"
+As the example shows, the parentheses operator is often used in parallel, this is often the case with most advanced search operators and it can get kind of crazy
+Parentheses help Google understand that you want to prioritize specific groups of terms, making complex queries easier to manage<p>
+
+<p>cache:urlhere Google stores old versions of websites in their cache, it is kind of like an archive and this operator allows you to take advantage of that, it might include old information or past versions of a website, this can be useful if a website is down or when you're looking for pages that may have changed or are currently unavailable due to a website issue or content removal, or checking a website’s content before it was deleted or altered. The cached version may not always be up to date, as Google doesn't cache pages in real-time. Cached versions could be several days or weeks old, so sometimes it may be best to use internet archive<p>
+
+<p>define: This is a very basic search operator that is not really used for OSINT, but it is to define a word obviously, it is more of a tip than a tool, for example define:VPN or some other acronym you do not know the definition of or maybe a complex word such as Supercalifragilisticexpialidocious<p>
+
+<p>.. The double period search operator is used to search for a range of numbers or dates, It’s often used when you want to find content that falls within a specific range, such as articles, publications, or events from a particular period, for example data breach 2018..2021<p>
+
+<p>book: This search operator in Google is used to search for books on a specific topic. It directs Google to search its Google Books database, which includes millions of books and previews, making it easier to find relevant books and literature. This can be used for some super gangster book research, you can do genres, authors, or even date ranges with the previously mentioned .. operator, you can even double up book:"data science" "machine learning" this will show books that discuss data science and machine learning. I bet MC Lars uses this<p>
+
+<p>movies: and music: similiar to books but less cool<p>
+
+<p>AROUND(number) This operator is fairly uncommon but basically what it does is find results where two terms appear within (x) words of each other, it might be best to give an example: "data breach" AROUND(5) "emails" this would find pages where data breach appears within 5 words of emails, you can do a lot with this operator, it usually has a max gap of 10-15 words and with a lot of these complex operators it works best when paired with other operators<p>
+
+<p>ext:
+filetype:
+These operators do the same thing, they search for a specific file extension or type (.pdf , .txt , etc.) works best when used with other operators, example: "confidential" ext:pdf<p>
+
+<p>inurl: This one finds pages with specific words in the URL, for example inurl:login or inurl:admin<p>
+
+<p>allinurl: is broader, for example a comparison:<p>
+
+<p>inurl:login admin, inurl only works with one word or no spaces, so this will search for a url that contains login but the page mentions admin
+allinurl:login admin, this will instead look for urls that contain login and admin<p>
+
+<p>intitle: This operator looks for a single word or phrase in a page title like intitle:"top secret" U.S.A or some other word here which finds pages which contain top secret in the title and mention whatever word you put after<p>
+
+<p>allintitle: Similiarly to the other all operators, it just includes everything in the operator so if you type allintitle:top secret U.S.A, it will return with pages that contain that in the title<p>
+
+<p>intitle is best for flexible searches with multiple operators
+allintitle is best for a more targeted search<p>
+
+<p>intext and allintext is basically what you can imagine based on the above in's and allin's (instead of the title or url, it searches the text/body)<p>
+
+<p>inanchor and allinanchor are same as text but focused on anchor text, very niche<p>
+
+<p>insubject: Searches for phrases within the subject line of emails or Usenet posts, there is no allinsubject but you can use the AND operator aswell as the OR operator to achieve the same goal<p>
+
+<p>location/loc: operator, you can just use the UI to do this probably, and this dork is not as documented but it seems to work, example: coffee loc:Paris
+
+<p>link:www.example.com This operator basically shows all indexed pages that reference a website, unfortunately, as mentioned, many google dorks are being cracked down on, google may intentionally block results<p>
+
+<p>site: is one of the most useful operators and is actually usually reliable suprisingly. it can work on just domains, like .com or .gov or can be specific sites entirely, my favorite use is finding all the indexed pages of a friends website, for example site:ytcracker.com here is 3 examples
+site:gov "budget report"
+site:example.com shows all indexes of a website
+site:twitter.com "data breach"<p>
+
+<p>before: and after: operators are basically replaced by simple UI filters and they themselves replaced time: and daterange: daterange was kinda cool because it used Julian dates which is a continuous day count from 4713 BC, unfortunately i am pretty sure time and daterange are gone, anyways before and after works exactly how you'd expect just note the format is YYYY-MM-DD
+Allthough entirely irrelevant here is a formula to convert regular date into Julian Date
+
+JD = (1461 × (Y + 4800 + (M - 14)/12)) / 4 + (367 × (M - 2 - 12 × ((M - 14)/12))) / 12 - (3 × ((Y + 4900 + (M - 14)/12)/100)) / 4 + D - 32075
+
+where Y = Year
+M = Month
+And D = Day
+obviously<p>
+
+
+<p>Human focused OSINT<p>
+
+<p>A good way of tracking someone is SOCMINT, or Social Media Intelligence, It is s the branch of OSINT that focuses specifically on collecting and analyzing data from social platforms like X/Twitter, Facebook, Instagram, TikTok, LinkedIn and smaller niche forums. It’s powerful because social media is where people voluntarily publish huge amounts of personal information, like retards, often in real time. SOCMINT is about more than just stalking someone’s profile. It involves tracking usernames, mapping networks of friends or followers, analyzing hashtags, monitoring sentiment, and geolocating posts from photos, videos, or metadata. Investigators often use it to confirm identities, spot connections between individuals or groups, detect disinformation campaigns, or track events as they unfold. For example, a protest or natural disaster can be followed almost live on social media before news outlets cover it. SOCMINT can ven be used in missing persons investigations, Social Media is the future, everyone spends so much time on it constantly posting and wasting away their lives that by some ungodly coincidence they can sometimes be useful. There are challenges though, privacy settings limit what can be seen publicly, and platforms regularly change their APIs to restrict scraping, disinformation, fake accounts, bots, and deepfakes make verification a constant concern. Analysts and investigators need to cross-check content with other sources, and consider many factors to avoid making the wrong conclusions. SOCMINT can also involve technical methods like using advanced search operators (yes some of the previous google dorks do work in social medias depending on which operator and which platform) scraping tools, or third-party aggregators that centralize data. But it’s not only technical, it’s also about understanding human behavior. People use different usernames on different platforms, follow patterns in how they post, and leave digital traces in their interactions. Skilled SOCMINT work connects those dots and in depth analyzes them and learns from it, some people are incredibly talented with it. It usually begins with identifiers. A username, email, phone number, or even a real name can be the starting point. Analysts and investigators search across multiple platforms to see if the same handle is reused. Many people recycle usernames, and once one account is confirmed, others often fall into place, tools like reverse username search engines such as sherlock or whatsmyname.app are used quite often, but often have false positives so it once again comes running back to just creative Google queries which can reveal profiles that wouldn’t show up directly.<p>
+
+<p>Once accounts are identified, the next layer is activity analysis. That means looking at posts, likes, shares, follows, and comments. Patterns emerge like when a person is most active, who they interact with most often, what topics they care about. Hashtags and keywords help trace involvement in movements, campaigns, or events. Analysts and investigators can also track how narratives spread by following hashtag chains across platforms, this can get really in depth if certain gangs or groups of interest use particular keywords and hashtags, it can get very psychological. Geolocation is another big method. Even when someone doesn’t tag a location, images and videos may contain landmarks, weather patterns, or even metadata that give clues. We've all seen rainbolt, he is a genuine Geospatial intelligence analyst and is incredibly skilled, he has even done Bellingcat challenges, often times GEOINT is a huge part of it all. Cross referencing a single background feature in a photo with Google Maps or street view can pin down an exact location, this is especially useful for verifying the authenticity of content in conflict zones or protests, OSINT analysts have actually made a huge difference in wars, and not just on the government side, we have seen groups like bellingcat researching wars and making a difference in how news is reported and sometimes how battles go, who remembers when those 4chan users used GEOINT to find ISIS camps and sent it to the russian government who then did air strikes on the ISIS camps. Pivot on usernames, scrape conversations where allowed, and always cross-check with external tools and archives.<p>
+
+<p>Also it is worth mentioning the closed source side of it all, often times an investigator relies on just open sources, as in the name but of course closed source intelligence exists, but is usually very illegal for most, sometimes an investigator or analyst (within legal boundaries) will maybe social engineer their way into a previously semi closed source of intel to monitor and take action on, an example might be a private discord server or instagram group chat, and especially telegram channels, often times entire terrorist groups have telegram groups some are semi-public and can provide good intel some are more private and you can sometimes find your way into these more private groups with OSINT or social engineering techniques. Some OSINT groups and Government agencies will monitor these groups and collect intel from them but it is one of the less public things they do, this is because of opsec, or operational security.<p>
+
+
+<p>OPSEC<p>
+
+<p>Opsec is kind of a blanket term nowadays for not only operational security but also personal and cyber security, a very basic way of describing it is what the U.S Government came up with in WW2 that being: loose lips sink ships, this idiom was chosen because it is a very simple way to iterate that you should shut the fuck up or else bad things will happen, Dual Core (a nerdcore hip hop duo) has a song called 0x0A Hack Commandments, it is a tribute to The Notorious B.I.G - Ten Crack Commandments, this song says shut the fuck up as a rule, two times, and there is only ten rules so you do the math, yeah it is like the #1 rule of opsec, this song is actually a very good opsec guide, but anyway, loose lips sink ships is the perfect idiom to sum up opsec, to an average person anyway but it obviously does not tell you everything, so let's talk about it. starting by diving into "shut the fuck up" the reason we say this is because let's say a osint group has infiltrated a telegram group they're not supposed to be in, if they go out and tell people, the people in the telegram group might find out and tighten up on opsec (which is bad for us), delete the group, or kick people which may include the osint investigator, this could even happen if you tell a friend because they may tell other people, one tiny opsec violation may domino, so it is best to just shut the fuck up about operational details entirely. Then there is personal security or persec, i would say this is protecting yourself from OSINT, not sharing personal information, using the methods you know to protect yourself, for example, during SOCMINT, we search for usernames, it is common for one person to use the same username everywhere, that is fine if you're a public figure, if you are a public figure almost none of this applies to you, but if we know that we search for that, we would use different usernames. That is one small example and persec is many more things but let's talk about cybersec, if persec is protecting from OSINT cybersec is protecting from hacking, a very simple example of cybersecurity is not using the same passwords for multiple accounts.<p>
+
+<p>Now that was the concept let's get into the specifics. Start with your environment, never do investigations from your personal machine. The safest setups are either a dedicated laptop that never touches your real accounts, or a virtual machine, Kali, Tails, and Arch are common picks, but even a stripped down Linux VM works if you configure it right. Rule one: separation. If the machine touches OSINT, it never touches your banking, personal email, or Netflix, nothing! Next is network shit. Home IP is a no go, a VPN masks it, but you’re trusting the provider, people talk about how protonVPN gives IP's to feds or how other providers sell your data. Tor gives you anonymity, but some sites block it outright. A good compromise is layering — VPN into Tor (very slow though) so your ISP only sees VPN traffic and exit nodes don’t see your real IP. Public Wi-Fi can add another layer if you’re cautious, but don’t rely on coffee shop networks without making sure your device is secure, it is important that during an investigation your device never touches your home network, that immediately destroys opsec and ties it to you. Now, sockpuppets. Bad ones are obvious: no history, no friends, no posts, good ones look real, feel real, build them slow, seed them with benign activity, follow random accounts, post neutral stuff long before you need them operational, months or years in advance, also make sure the sockpuppets follow opsec rules as well. Spread them across platforms with different stories. Never recycle profile pictures from stock photo sites they’re easily reverse-searched. Better to subtly modify AI generated faces or your own heavily altered images, a good option is thispersondoesnotexist.com When it comes to handling content, discipline is key, never click target links directly. If you need to open a file, do it in a VM or a disposable machine that has no ties to you. Screenshots are safer than downloads, don't download shit screenshot it, and don't visit websites, cache services archive.today, the wayback machine, or even the cache: operator in google let you see content on the target site without ever touching the targets server. Compartmentalization is very important. Each investigation lives in its own container, separate VM, separate accounts, separate notes. Don’t mix cases. If one identity gets burned, it shouldn’t drag down the rest, try to make it like you expect to get burned. Finally, remember your discipline, the fastest way to blow opsec is an impulsive click or a lazy shortcut. Always assume the target is more paranoid than you, if you wouldn’t do it with someone watching over your shoulder, don’t.<p>
+
+
+<p>Case study
+One of the best known OSINT case's is the Bellingcat investigation into the downing of Malaysia Airlines Flight MH17 over eastern Ukraine in 2014. During this time Bellingcat was just starting out, as their founding date is July 2014. When the airliner was shot down, there was confusion and conflicting narratives. Russia denied involvement, while others blamed pro Russian separatists. Traditional intelligence agencies had classified data, but open source investigators were able to build a detailed case entirely from public information. they racked social media posts from locals in eastern Ukraine, photos of missile launchers, and videos showing convoys on the move. By comparing shadows, weather, and landmarks, Bellingcat geolocated images to specific roads and fields. Satellite imagery and Google Street View helped confirm locations. Even tiny details like matching a scorch mark on a missile launcher with earlier parade photos, you think rainbolt is good? With this they tied the equipment back to a specific Russian military unit. Within months, OSINT analysis had shown that a Russian made Buk missile system crossed into Ukraine, fired the missile that downed MH17, and then returned to Russia. Years later, official investigations and courts confirmed the same findings with classified intelligence, but the open-source community had already established the truth for the world to see, this case was important because of the scale it was at, it demonstrated that OSINT has power on a global level, and this case is now the gold standard
+here is the details:<p>
+
+<p>The missile system (Buk TELAR) - Photos and videos surfaced on Russian social media of a Buk missile launcher being transported through separatist-held areas around the date of the shootdown. Analysts matched these to specific roads using Google Maps and Street View (GEOINT) one famous video showed the launcher with one missile missing, moving back toward Russia the day after the shootdown.<p>
+
+<p>Linking to a Russian unit - The Buk in question had distinctive features, the arrangement of side skirts, serial markings, and scratches, blemishes, marks etc., stuff you'd expect but also are unique identifiers Bellingcat geniusly cross-referenced this with parade photos and military spotting images, tracing it to Russia’s 53rd Anti-Aircraft Missile Brigade, based in Kursk. Social media posts from Russian soldiers further confirmed that this unit was operating near the border at the time (SOCMINT)<p>
+
+<p>Geolocation and timeline - By analyzing timestamps, shadows, and local weather, investigators confirmed when and where the Buk was filmed<p>
+
+<p>Phone intercepts (later released by Ukrainian authorities) lined up with OSINT findings, showing separatists discussing “a Buk we’ve just received.”<p>
+
+<p>The impact zone - Wreckage photos posted online were used to confirm the type of missile pieces of a 9M38-series Buk warhead were identified by unique fragmentation patterns.<p>
+
+<p>Results - The case was so strong that when the Dutch led Joint Investigation Team (JIT) released its findings, they matched what OSINT analysts had already concluded, MH17 was shot down by a Buk missile system brought in from Russia, fired from separatist controlled farmland near the village of Pervomaiskyi, and returned afterward. In 2022, a Dutch court convicted two Russians and a separatist leader in absentia for their roles. While Russia continued to deny responsibility, the OSINT investigation by Bellingcat made it impossible for the disinformation campaign to fully stick, the evidence was simply too public and verifiable, and to this day Bellingcat is still constantly destroying disinformation using OSINT and making real and huge differences.<p>
+
+
+<p>Ethical and legal considerations<p>
+
+<p>OSINT obviously relies on publicly available data, so it doesn’t involve hacking. That is why it is usually legal, But grey and black areas exist. Scraping platforms often violates Terms of Service. Privacy laws like GDPR restrict storing or sharing personal data. What’s legal in one jurisdiction may not be in another, so investigators must navigate carefully, or not, depends how you roll, but try to be ethical, OSINT is powerful and with great power comes great responsibility, use it for good, and not just good according to your political agenda, but real good.<p>
+
+<p>The End<p>
+<p>Hopefully this was a good read up for somebody, this was typed up in the arch linux text editor in a few days, probably had more potential, I used a lot of sources, i will not site them, shouts you if you're reading this, yes i used chatgpt for some things, but a lot of it was me, i am not a wizard so this took forever, if you learned anything i am happy and i hope you are too<p>
+</p>
+    <p><a href="index.html">← Home</a></p>
+  </main>
+</body>
+</html>
